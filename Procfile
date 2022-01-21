@@ -1,1 +1,2 @@
-web: npm init
+web: cd server
+web: npm run dev
