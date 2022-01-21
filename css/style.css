@@ -101,11 +101,15 @@ nav ul li a {
 
 .navbar {
     width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .services li {
     background-color: rgba(0, 0, 0, 0.521);
-    height: 50px;
+    padding: 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +117,7 @@ nav ul li a {
     border-left: none;
     border-right: none;
     cursor: pointer;
+    width: 100%;
 }
 
 .services li h3 {
@@ -123,8 +128,9 @@ nav ul li a {
 
 .content{
     width: 80%;
-    height: 60vh;
-    background: #F3F6FB;
+    background-image: url('../images/geometrie.jpg');
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.671);
 }
 
 .phone {
@@ -162,3 +168,320 @@ nav ul li a {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.content {
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content #span_1 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.content span {
+    color: #eb2632;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content h2 {
+    color: #fff;
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.blog-posts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.posts {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #fff;
+    margin: 10px;
+}
+
+#post-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+#post-redirect button {
+    padding: 5% 10%;
+    border: 3px solid #eb2632;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: #eb2632;
+    cursor: pointer;
+    background: transparent;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: rgba(32, 31, 31, 0.767);
+    color: #fff;
+    line-height: 1.5;
+  }
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+  }
+  /* Sticks footer to bottom */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .container {
+    flex: 1;
+  }
+  /* Footer main */
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 29.8125rem /* 477px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  @media only screen and (min-width: 77.5rem /* 1240px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+  
+  /* Footer main | Newsletter form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+  }
+  input[type="submit"] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+  }
+  /* Footer social */
+  .ft-social {
+    padding: 0 1.875rem 1.25rem;
+  }
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #ccc4 solid;
+    padding-top: 1.25rem;
+  }
+  .ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+  /* Footer legal */
+  .ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #101010;
+  }
+  .ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  }
+  /* one before the last child */
+  .ft-legal-list li:nth-last-child(2) {
+      flex: 1;
+  }
+
+  #ul-menu {
+      width: 100%;
+      color: #fff;
+      font-family: sans-serif;
+      position: fixed;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.521);
+      top: 75px;
+  }
+
+  #ul-menu a {
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+  }
+
+  #ul-menu li {
+      list-style: none;
+      margin: 10px;
+  }
+
+  #close {
+      cursor: pointer;
+      display: none;
+  }
+
+  .mecanica {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 75px;
+      height: 100vh;
+
+  }
+
+  .detalii {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } 
+
+  .detalii h2 {
+      margin: 10px;
+  }
+
+  .imagine {
+      width: 50%;
+      height: 50vh;
+      background-image: url('../images/geometrie.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .electrica .imagine {
+    background-image: url('../images/remap-ecu.jpg');
+  }
+
+  .itp .imagine {
+    background-image: url('../images/itp.jpg');
+  }
+
+  .mecanica h1 {
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+  }
+
+  .mecanica h2 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.mecanica ul {
+    margin: auto;
+}
+
+.mecanica li {
+    color: #fff;
+    list-style-type: circle;
+    font-family: sans-serif;
+}
+
+
+  @media only screen and (max-width: 1350px) {
+      .navbar {
+          width: 50%;
+      }
+
+      .phone {
+          position: fixed;
+          left: 0;
+          top: 50%;
+          background:rgba(0, 0, 0, 0.671);
+          border: 2px solid #fff;
+      }
+
+      .menu {
+          display: block;
+      }
+
+      nav ul {
+          display: none;
+      }
+  }
+
+  .fb-posts {
+      margin-top: 75px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+      .services {
+          flex-direction: column-reverse;
+      }
+
+      .content {
+          width: 100%;
+          height: 40vh;
+      }
+
+      .navbar {
+          width: 100%;
+      }
+
+      .mecanica {
+          flex-direction: column;
+          background-image: url(../images/geometrie.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-blend-mode: darken;
+          background-color: rgba(0, 0, 0, 0.671);
+      }
+
+      .electrica {
+        background-image: url(../images/remap-ecu.jpg);
+      }
+
+      .itp {
+        background-image: url(../images/itp.jpg);
+      }
+
+      .mecanica h2 {
+          font-size: 1rem;
+          margin-left: -30px;
+      }
+
+      .imagine {
+          display: none;
+      }
+  }

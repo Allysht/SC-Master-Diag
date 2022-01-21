@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="google-signin-client_id" content="654650545032-bn512m8m745d8imonib9v9qsdltumhgv.com.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!--pages-->
     <script src="./js/controller.js" defer></script>
     <script src="components/main.js" defer></script>
@@ -17,14 +19,25 @@
     <nav>
         <h1 class="logo">Master <span>Diag</span></h1>
         <ul>
-            <li><a href="#">Acasa</a></li>
-            <li><a href="#">Mecaninca</a></li>
-            <li><a href="#">Electrica</a></li>
-            <li><a href="#">ITP</a></li>
-            <li><a href="#">Suspensii</a></li>
-            <li><a href="#">Spalatorie</a></li>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="./pages/mecanica.html">Mecaninca</a></li>
+            <li><a href="./pages/electrica.html">Electrica</a></li>
+            <li><a href="./pages/itp.html">ITP</a></li>
+            <li><a href="./pages/carwash.html">Spalatorie</a></li>
         </ul>
+        <div class="user">
+            
+        </div>
         <div class="phone"><img src="./images/phone-i.png"></div>
+        <div class="menu" id="menu"><img src="./images/icons8-menu-90 (1).png" width="50px"></div>
+        <div id="close"><img src="./images/icons8-close-48.png" alt=""></div>
+        <div id="ul-menu">
+            <li><a href="#">Acasa</a></li>
+            <li><a href="./pages/mecanica.html">Mecaninca</a></li>
+            <li><a href="./pages/electrica.html">Electrica</a></li>
+            <li><a href="./pages/itp.html">ITP</a></li>
+            <li><a href="./pages/carwash.html">Spalatorie</a></li>
+        </div>
     </nav>
     <div class="details">
         <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Str.%20Buzaului,%20nr.4&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -32,43 +45,64 @@
     <div class="services">
         <div class="navbar">
             <li class="service-li">
-                <h3> Mecanica si Electrica Auto </h3>
+                <a href="./pages/services.html" style="text-decoration: none;">><h3> Mecanica si Electrica Auto </h3></a>
             </li>
     
             <li class="service-li">
-                <h3> Diagnoza multimarca </h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3> Diagnoza multimarca </h3></a>
             </li>
     
             <li class="service-li">
-                <h3> Soft </h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3> Soft </h3></a>
             </li>
     
             <li class="service-li">
-                <h3> Remapare ECU </h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3> Remapare ECU </h3></a>
             </li>
     
             <li class="service-li">
-                <h3> Piese auto NOI si SH </h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3> Piese auto NOI si SH </h3></a>
             </li>
     
             <li class="service-li">
-                <h3> ITP </h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3> ITP </h3></a>
             </li>
     
             <li class="service-li">
-                <h3> Geometrie Roti </h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3> Geometrie Roti </h3></a>
             </li>
             
             <li>
-                <h3>Mai mult...</h3>
+                <a href="./pages/services.html" style="text-decoration: none;"><h3>Mai mult...</h3></a>
             </li>
     
         </div>
         
-        <div class="content" id="content"></div>
+        <div class="content" id="content">
+            <h2><span id="span_1">Master</span> <span>Diag</span> este un service auto, cu o echipa pregatita si determinata dar totodata cu un nivel professional ridicat, care se doreste un service de top pe piata auto din Bucuresti.</h2>
+        </div>
     </div>
     <div class="galery-alert">
         <button>Vezi in Galerie</button>
     </div>
+    <div class="blog-posts">
+        <div class="posts"></div>
+        <div class="posts"></div>
+        <div class="posts"></div>
+        <div class="posts" id="post-redirect">
+            <button>Vezi mai multe postari</button>
+        </div>
+    </div>
+    <footer>
+      
+        <!-- Footer legal -->
+        <section class="ft-legal">
+          <ul class="ft-legal-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>&copy; 2021 by Master Diag</li>
+          </ul>
+        </section>
+      </footer>
 </body>
 </html>
